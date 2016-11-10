@@ -1,0 +1,52 @@
+Problem Statement
+-----------------
+The task addresses the problem of the appearance and propagation of posts that share misleading multimedia content (images or video).
+In the context of the task, different types of misleading use are considered below:
+   1) Reposting of real multimedia, such as real photos from the past re-posted as being associated to a current event,
+    2) Digitally manipulated multimedia,
+    3) Synthetic multimedia, such as artworks or snapshots presented as real imagery
+
+Corpus :  text component, an associated piece of multimedia, and a set of metada-------   originating from the social media platform.
+1) text and metadata based features
+2) user based features from users profiles
+3) multimedia forensic features for the image.
+
+Desired result : Fake, real or unknown
+--------------
+
+Note: Dataset might have content in different languages. For each post, original text, an auxiliary machines translated text and a language code will be provided.
+
+
+Dataset features
+------------------
+
+Images  - 399 image links in set_images.txt
+======
+1) Image ID
+2)Image URL
+3) Veracity
+4) Event image is taken from
+
+Tweets - 42018 tweet ids in tweet_images.txt
+======
+1) Tweet IDS
+2) Image IDS
+3) Veracity
+4) Event that tweets come from
+
+Note: Same Image ids are associated with multiple tweets since same image was shared in multiple tweets (tweet ids).
+
+tweet_image_update.txt - pure fake tweets
+======================
+??????????????
+
+Removed Tweets -  870 tweet ids in tweets_event.txt (tweets deleted or account suspended)
+==============
+1) Tweet ids
+2) Veracity
+3) Event that tweet comes from
+
+Note: No overlap in tweets_event.txt and tweets_images.txt
+
+
+
